@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetAmigo - Seu Petshop de Confiança</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-paw"></i>
+                <span>PetAmigo</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="#agendar" class="btn-nav">Agendar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>Cuidado com amor desde 2015</span>
+                </div>
+                <h1 class="hero-title">
+                    O melhor cuidado para o seu 
+                    <span class="gradient-text">melhor amigo</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Oferecemos serviços completos de banho, tosa, consultas veterinárias e uma loja repleta de produtos de qualidade para deixar seu pet feliz e saudável.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#agendar" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Agendar Serviço
+                    </a>
+                    <a href="#produtos" class="btn btn-secondary">
+                        <i class="fas fa-shopping-bag"></i>
+                        Ver Produtos
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="8500">0</span>
+                        <span class="stat-label">Pets Atendidos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">% Satisfação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop" alt="Cachorro feliz" class="hero-img">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Vacinação</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-cut"></i>
+                        <span>Tosa Profissional</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-utensils"></i>
+                        <span>Ração Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossos Serviços</span>
+                <h2 class="section-title">Tudo que seu pet precisa em um só lugar</h2>
+                <p class="section-desc">Oferecemos uma gama completa de serviços para garantir o bem-estar e a saúde do seu animal de estimação.</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card" data-servico="banho">
+                    <div class="servico-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Banho & Tosa</h3>
+                    <p>Higiene completa com produtos hipoalergênicos e tosa profissional por especialistas certificados.</p>
+                    <span class="servico-preco">A partir de R$ 45,00</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="servico-card" data-servico="vet">
+                    <div class="servico-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consulta Veterinária</h3>
+                    <p>Atendimento clínico completo com veterinários experientes e equipamentos modernos.</p>
+                    <span class="servico-preco">A partir de R$ 80,00</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="servico-card" data-servico="hotel">
+                    <div class="servico-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Hotel para Pets</h3>
+                    <p>Hospedagem com conforto, segurança e muito carinho enquanto você viaja.</p>
+                    <span class="servico-preco">A partir de R$ 60,00/dia</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="servico-card" data-servico="adestramento">
+                    <div class="servico-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Adestramento</h3>
+                    <p>Treinamento positivo para cães de todas as idades e portes com adestradores certificados.</p>
+                    <span class="servico-preco">A partir de R$ 120,00/aula</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="servico-card" data-servico="vacina">
+                    <div class="servico-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Vacinação</h3>
+                    <p>Carteira de vacinação atualizada com todas as vacinas necessárias para a saúde do seu pet.</p>
+                    <span class="servico-preco">A partir de R$ 55,00</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="servico-card" data-servico="spa">
+                    <div class="servico-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa Pet</h3>
+                    <p>Massagem relaxante, aromaterapia e tratamentos de pele para o máximo de bem-estar.</p>
+                    <span class="servico-preco">A partir de R$ 90,00</span>
+                    <button class="btn-servico">Saiba mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossos Produtos</span>
+                <h2 class="section-title">Os melhores produtos para seu pet</h2>
+                <p class="section-desc">Selecionamos as melhores marcas e produtos com preços especiais.</p>
+            </div>
+            <div class="produtos-filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="racao">Rações</button>
+                <button class="filtro-btn" data-filtro="brinquedo">Brinquedos</button>
+                <button class="filtro-btn" data-filtro="acessorio">Acessórios</button>
+                <button class="filtro-btn" data-filtro="higiene">Higiene</button>
+            </div>
+            <div class="produtos-grid" id="produtosGrid">
+                <!-- Produtos serão inseridos via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+            </div>
+            <div class="depoimentos-carousel" id="depoimentosCarousel">
+                <div class="depoimentos-track" id="depoimentosTrack">
+                    <!-- Depoimentos via JS -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="depoPrev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="depoDots"></div>
+                    <button class="carousel-btn next" id="depoNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section class="agendamento" id="agendar">
+        <div class="container">
+            <div class="agendamento-wrapper">
+                <div class="agendamento-info">
+                    <span class="section-tag">Agendamento</span>
+                    <h2>Agende um serviço agora mesmo</h2>
+                    <p>Preencha o formulário ao lado e entraremos em contato para confirmar seu agendamento. Atendemos de segunda a sábado, das 8h às 20h.</p>
+                    <div class="agendamento-contatos">
+                        <div class="ag-contato">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Telefone</span>
+                                <strong>(11) 99999-8888</strong>
+                            </div>
+                        </div>
+                        <div class="ag-contato">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>E-mail</span>
+                                <strong>contato@petamigo.com.br</strong>
+                            </div>
+                        </div>
+                        <div class="ag-contato">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Endereço</span>
+                                <strong>Rua dos Pets, 123 - São Paulo/SP</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agendamento-form-wrapper">
+                    <form class="agendamento-form" id="formAgendamento">
+                        <h3>Preencha seus dados</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nomePet">Nome do Pet</label>
+                                <input type="text" id="nomePet" name="nomePet" placeholder="Nome do seu pet" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipoPet">Tipo</label>
+                                <select id="tipoPet" name="tipoPet" required>
+                                    <option value="">Selecione</option>
+                                    <option value="cachorro">Cachorro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servico">Serviço Desejado</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="banho">Banho & Tosa</option>
+                                <option value="consulta">Consulta Veterinária</option>
+                                <option value="hotel">Hotel para Pets</option>
+                                <option value="adestramento">Adestramento</option>
+                                <option value="vacina">Vacinação</option>
+                                <option value="spa">Spa Pet</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">Data Preferencial</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="horario">Horário Preferencial</label>
+                                <select id="horario" name="horario" required>
+                                    <option value="">Selecione</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma observação especial?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Agendamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Footer -->
+    <footer class="footer" id="contato">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <i class="fas fa-paw"></i>
+                            <span>PetAmigo</span>
+                        </a>
+                        <p>Cuidando do seu melhor amigo com amor, dedicação e profissionalismo desde 2015.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                            <li><a href="#agendar">Agendar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#">Banho & Tosa</a></li>
+                            <li><a href="#">Consulta Veterinária</a></li>
+                            <li><a href="#">Hotel para Pets</a></li>
+                            <li><a href="#">Adestramento</a></li>
+                            <li><a href="#">Vacinação</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo/SP</li>
+                            <li><i class="fas fa-phone"></i> (11) 99999-8888</li>
+                            <li><i class="fas fa-envelope"></i> contato@petamigo.com.br</li>
+                            <li><i class="fas fa-clock"></i> Seg-Sáb: 8h às 20h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 PetAmigo. Todos os direitos reservados.</p>
+                <p>Feito com <i class="fas fa-heart"></i> para pets</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Mensagem enviada com sucesso!</span>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
